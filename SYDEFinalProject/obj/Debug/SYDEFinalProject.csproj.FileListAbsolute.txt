@@ -27,3 +27,6 @@ c:\users\daniel\documents\visual studio 2015\Projects\SYDEFinalProject\SYDEFinal
 c:\users\daniel\documents\visual studio 2015\Projects\SYDEFinalProject\SYDEFinalProject\obj\Debug\SYDEFinalProject.csproj.GenerateResource.Cache
 c:\users\daniel\documents\visual studio 2015\Projects\SYDEFinalProject\SYDEFinalProject\obj\Debug\SYDEFinalProject.exe
 c:\users\daniel\documents\visual studio 2015\Projects\SYDEFinalProject\SYDEFinalProject\obj\Debug\SYDEFinalProject.pdb
+C:\Users\alex\Documents\GitHub\SYDE_Final_Project\SYDEFinalProject\bin\Debug\SYDEFinalProject.exe.config
+C:\Users\alex\Documents\GitHub\SYDE_Final_Project\SYDEFinalProject\obj\Debug\SYDEFinalProject.exe
+C:\Users\alex\Documents\GitHub\SYDE_Final_Project\SYDEFinalProject\obj\Debug\SYDEFinalProject.pdb
