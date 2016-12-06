@@ -84,6 +84,7 @@
             this.btnSupplies.TabIndex = 4;
             this.btnSupplies.Text = "Supplies";
             this.btnSupplies.UseVisualStyleBackColor = true;
+            this.btnSupplies.Click += new System.EventHandler(this.btnSupplies_Click);
             // 
             // btnLogout
             // 
@@ -93,6 +94,7 @@
             this.btnLogout.TabIndex = 5;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // frmMainScreen
             // 

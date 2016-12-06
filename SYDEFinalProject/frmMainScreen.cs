@@ -45,5 +45,20 @@ namespace SYDEFinalProject
             this.Hide();
             Rooms.ShowDialog();
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            frmAdminLoginScreen Log = new frmAdminLoginScreen();
+            this.Hide();
+            Log.ShowDialog();
+
+        }
+
+        private void btnSupplies_Click(object sender, EventArgs e)
+        {
+            frmSuppliesScreen Sup = new frmSuppliesScreen();
+            this.Hide();
+            Sup.ShowDialog();
+        }
     }
 }
