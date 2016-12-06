@@ -16,5 +16,10 @@ namespace SYDEFinalProject
         {
             InitializeComponent();
         }
+
+        private void frmEmployeeInfoScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
