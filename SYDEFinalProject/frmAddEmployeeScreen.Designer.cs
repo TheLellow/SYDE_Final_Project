@@ -43,6 +43,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.lblAdd = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -159,6 +160,7 @@
             this.btnRegister.TabIndex = 14;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnBack
             // 
@@ -168,12 +170,22 @@
             this.btnBack.TabIndex = 15;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // lblAdd
+            // 
+            this.lblAdd.AutoSize = true;
+            this.lblAdd.Location = new System.Drawing.Point(304, 17);
+            this.lblAdd.Name = "lblAdd";
+            this.lblAdd.Size = new System.Drawing.Size(0, 13);
+            this.lblAdd.TabIndex = 16;
             // 
             // frmAddEmployeeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 165);
+            this.Controls.Add(this.lblAdd);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.label7);
@@ -213,5 +225,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label lblAdd;
     }
 }

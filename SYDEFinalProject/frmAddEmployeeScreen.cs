@@ -16,5 +16,17 @@ namespace SYDEFinalProject
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmEmployeesScreen Emp = new frmEmployeesScreen();
+            this.Hide();
+            Emp.ShowDialog();
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            lblAdd.Text = "Employee has been added"
+        }
     }
 }

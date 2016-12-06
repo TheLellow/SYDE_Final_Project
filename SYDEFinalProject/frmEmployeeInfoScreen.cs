@@ -21,5 +21,24 @@ namespace SYDEFinalProject
         {
 
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            frmEmployeesScreen Emp = new frmEmployeesScreen();
+            this.Hide();
+            Emp.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmEmployeeUpdateScreen Up = new frmEmployeeUpdateScreen();
+            this.Hide();
+            Up.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
