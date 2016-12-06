@@ -30,8 +30,8 @@
         {
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtPasswordCon = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -67,19 +67,19 @@
             this.label8.TabIndex = 52;
             this.label8.Text = "Password";
             // 
-            // textBox8
+            // txtPasswordCon
             // 
-            this.textBox8.Location = new System.Drawing.Point(134, 246);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(164, 20);
-            this.textBox8.TabIndex = 51;
+            this.txtPasswordCon.Location = new System.Drawing.Point(134, 246);
+            this.txtPasswordCon.Name = "txtPasswordCon";
+            this.txtPasswordCon.Size = new System.Drawing.Size(164, 20);
+            this.txtPasswordCon.TabIndex = 51;
             // 
-            // textBox7
+            // txtPassword
             // 
-            this.textBox7.Location = new System.Drawing.Point(133, 220);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(164, 20);
-            this.textBox7.TabIndex = 50;
+            this.txtPassword.Location = new System.Drawing.Point(133, 220);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(164, 20);
+            this.txtPassword.TabIndex = 50;
             // 
             // btnBack
             // 
@@ -89,6 +89,7 @@
             this.btnBack.TabIndex = 49;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnRegister
             // 
@@ -98,6 +99,7 @@
             this.btnRegister.TabIndex = 48;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // label7
             // 
@@ -212,8 +214,8 @@
             this.ClientSize = new System.Drawing.Size(357, 323);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtPasswordCon);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.label7);
@@ -240,8 +242,8 @@
 
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtPasswordCon;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Label label7;

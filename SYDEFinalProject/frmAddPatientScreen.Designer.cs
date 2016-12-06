@@ -43,6 +43,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblAdd = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBack
@@ -53,6 +54,7 @@
             this.btnBack.TabIndex = 30;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnRegister
             // 
@@ -62,6 +64,7 @@
             this.btnRegister.TabIndex = 29;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // label7
             // 
@@ -169,11 +172,20 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "First Name";
             // 
+            // lblAdd
+            // 
+            this.lblAdd.AutoSize = true;
+            this.lblAdd.Location = new System.Drawing.Point(168, 17);
+            this.lblAdd.Name = "lblAdd";
+            this.lblAdd.Size = new System.Drawing.Size(0, 13);
+            this.lblAdd.TabIndex = 31;
+            // 
             // frmAddPatientScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(416, 167);
+            this.Controls.Add(this.lblAdd);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.label7);
@@ -213,5 +225,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblAdd;
     }
 }

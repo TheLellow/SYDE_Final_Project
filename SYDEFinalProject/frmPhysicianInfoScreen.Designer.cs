@@ -28,23 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBilling = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.lblDelete = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnBilling
-            // 
-            this.btnBilling.Location = new System.Drawing.Point(16, 286);
-            this.btnBilling.Name = "btnBilling";
-            this.btnBilling.Size = new System.Drawing.Size(107, 23);
-            this.btnBilling.TabIndex = 66;
-            this.btnBilling.Text = "View Billing Info";
-            this.btnBilling.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -62,6 +53,7 @@
             this.btnUpdate.TabIndex = 65;
             this.btnUpdate.Text = "Update Info";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -71,6 +63,7 @@
             this.btnDelete.TabIndex = 64;
             this.btnDelete.Text = "Delete Physician";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnExit
             // 
@@ -80,6 +73,7 @@
             this.btnExit.TabIndex = 63;
             this.btnExit.Text = "Back";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label7
             // 
@@ -91,12 +85,20 @@
             this.label7.TabIndex = 61;
             this.label7.Text = "Physician Info";
             // 
+            // lblDelete
+            // 
+            this.lblDelete.AutoSize = true;
+            this.lblDelete.Location = new System.Drawing.Point(22, 291);
+            this.lblDelete.Name = "lblDelete";
+            this.lblDelete.Size = new System.Drawing.Size(0, 13);
+            this.lblDelete.TabIndex = 66;
+            // 
             // frmPhysicianInfoScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(327, 344);
-            this.Controls.Add(this.btnBilling);
+            this.Controls.Add(this.lblDelete);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
@@ -111,12 +113,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnBilling;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblDelete;
     }
 }

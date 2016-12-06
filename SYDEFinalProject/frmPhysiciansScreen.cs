@@ -16,5 +16,26 @@ namespace SYDEFinalProject
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmMainScreen Main = new frmMainScreen();
+            this.Hide();
+            Main.ShowDialog();
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            frmPatientInfoScreen Info = new frmPatientInfoScreen();
+            this.Hide();
+            Info.ShowDialog();
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            frmAddPhysicianScreen Add = new frmAddPhysicianScreen();
+            this.Hide();
+            Add.ShowDialog();
+        }
     }
 }

@@ -26,7 +26,7 @@ namespace SYDEFinalProject
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            lblAdd.Text = "Employee has been added"
+            lblAdd.Text = "Employee has been added";
         }
     }
 }

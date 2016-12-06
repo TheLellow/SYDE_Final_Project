@@ -35,6 +35,7 @@
             this.btnTransactions = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.lblDelete = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,6 +47,7 @@
             this.btnDelete.TabIndex = 68;
             this.btnDelete.Text = "Delete Patient";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnBilling
             // 
@@ -55,6 +57,7 @@
             this.btnBilling.TabIndex = 67;
             this.btnBilling.Text = "View Billing Info";
             this.btnBilling.UseVisualStyleBackColor = true;
+            this.btnBilling.Click += new System.EventHandler(this.btnBilling_Click);
             // 
             // dataGridView1
             // 
@@ -72,6 +75,7 @@
             this.btnUpdate.TabIndex = 66;
             this.btnUpdate.Text = "Update Info";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnTransactions
             // 
@@ -81,6 +85,7 @@
             this.btnTransactions.TabIndex = 65;
             this.btnTransactions.Text = "View Transaction Info";
             this.btnTransactions.UseVisualStyleBackColor = true;
+            this.btnTransactions.Click += new System.EventHandler(this.btnTransactions_Click);
             // 
             // btnBack
             // 
@@ -90,6 +95,7 @@
             this.btnBack.TabIndex = 64;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // label7
             // 
@@ -101,11 +107,20 @@
             this.label7.TabIndex = 62;
             this.label7.Text = "Patient Info";
             // 
+            // lblDelete
+            // 
+            this.lblDelete.AutoSize = true;
+            this.lblDelete.Location = new System.Drawing.Point(119, 17);
+            this.lblDelete.Name = "lblDelete";
+            this.lblDelete.Size = new System.Drawing.Size(0, 13);
+            this.lblDelete.TabIndex = 69;
+            // 
             // frmPatientInfoScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(330, 375);
+            this.Controls.Add(this.lblDelete);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnBilling);
             this.Controls.Add(this.dataGridView1);
@@ -130,5 +145,6 @@
         private System.Windows.Forms.Button btnTransactions;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblDelete;
     }
 }

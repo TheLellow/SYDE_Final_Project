@@ -44,6 +44,7 @@
             this.btnView.TabIndex = 59;
             this.btnView.Text = "View";
             this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // label7
             // 
@@ -71,6 +72,7 @@
             this.btnBack.TabIndex = 56;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnRegister
             // 
@@ -80,6 +82,7 @@
             this.btnRegister.TabIndex = 55;
             this.btnRegister.Text = "Register New Patient";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // frmPatientsScreen
             // 

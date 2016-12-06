@@ -40,5 +40,10 @@ namespace SYDEFinalProject
         {
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lblDelete.Text = "Employee has been deleted";
+        }
     }
 }

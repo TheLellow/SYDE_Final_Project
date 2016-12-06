@@ -16,5 +16,12 @@ namespace SYDEFinalProject
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            frmRoomsScreen back = new frmRoomsScreen();
+            this.Hide();
+            back.ShowDialog();
+        }
     }
 }

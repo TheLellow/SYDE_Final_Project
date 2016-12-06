@@ -50,6 +50,7 @@
             this.btnExit.TabIndex = 67;
             this.btnExit.Text = "Back";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label7
             // 

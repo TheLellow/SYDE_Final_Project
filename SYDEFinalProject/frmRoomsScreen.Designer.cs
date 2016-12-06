@@ -31,6 +31,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnExit = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnView = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,6 +51,7 @@
             this.btnExit.TabIndex = 64;
             this.btnExit.Text = "Back";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label7
             // 
@@ -61,11 +63,22 @@
             this.label7.TabIndex = 63;
             this.label7.Text = "Displaying Rooms";
             // 
+            // btnView
+            // 
+            this.btnView.Location = new System.Drawing.Point(16, 354);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(100, 23);
+            this.btnView.TabIndex = 65;
+            this.btnView.Text = "View Room Info";
+            this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            // 
             // frmRoomsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(328, 385);
+            this.Controls.Add(this.btnView);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label7);
@@ -82,5 +95,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnView;
     }
 }

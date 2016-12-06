@@ -16,5 +16,24 @@ namespace SYDEFinalProject
         {
             InitializeComponent();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            lblDelete.Text = "Physician has been deleted";
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            frmPhysicianUpdateScreen Up = new frmPhysicianUpdateScreen();
+            this.Hide();
+            Up.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            frmPhysiciansScreen back = new frmPhysiciansScreen();
+            this.Hide();
+            back.ShowDialog();
+        }
     }
 }

@@ -16,5 +16,12 @@ namespace SYDEFinalProject
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            frmPatientInfoScreen back = new frmPatientInfoScreen();
+            this.Hide();
+            back.ShowDialog();
+        }
     }
 }

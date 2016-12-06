@@ -16,5 +16,17 @@ namespace SYDEFinalProject
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmPatientInfoScreen Info = new frmPatientInfoScreen();
+            this.Hide();
+            Info.ShowDialog();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            lblUpdate.Text = "Patient has been updated";
+        }
     }
 }

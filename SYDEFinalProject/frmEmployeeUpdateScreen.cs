@@ -16,5 +16,17 @@ namespace SYDEFinalProject
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmEmployeeInfoScreen Info = new frmEmployeeInfoScreen();
+            this.Hide();
+            Info.ShowDialog();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            lblUpdate.Text = "Employee has been updated";
+        }
     }
 }

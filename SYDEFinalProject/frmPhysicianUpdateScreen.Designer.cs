@@ -43,6 +43,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblUpdate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBack
@@ -53,6 +54,7 @@
             this.btnBack.TabIndex = 45;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnUpdate
             // 
@@ -62,6 +64,7 @@
             this.btnUpdate.TabIndex = 44;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label7
             // 
@@ -169,11 +172,20 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "First Name";
             // 
+            // lblUpdate
+            // 
+            this.lblUpdate.AutoSize = true;
+            this.lblUpdate.Location = new System.Drawing.Point(208, 17);
+            this.lblUpdate.Name = "lblUpdate";
+            this.lblUpdate.Size = new System.Drawing.Size(0, 13);
+            this.lblUpdate.TabIndex = 46;
+            // 
             // frmPhysicianUpdateScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(414, 173);
+            this.Controls.Add(this.lblUpdate);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.label7);
@@ -213,5 +225,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblUpdate;
     }
 }

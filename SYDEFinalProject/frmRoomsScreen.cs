@@ -16,5 +16,19 @@ namespace SYDEFinalProject
         {
             InitializeComponent();
         }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            frmRoomInfo Info = new frmRoomInfo();
+            this.Hide();
+            Info.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            frmMainScreen Main = new frmMainScreen();
+            this.Hide();
+            Main.ShowDialog();
+        }
     }
 }

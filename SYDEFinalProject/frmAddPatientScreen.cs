@@ -16,5 +16,17 @@ namespace SYDEFinalProject
         {
             InitializeComponent();
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            lblAdd.Text = "Paitent has been added";
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmPatientsScreen back = new frmPatientsScreen();
+            this.Hide();
+            back.ShowDialog();
+        }
     }
 }
