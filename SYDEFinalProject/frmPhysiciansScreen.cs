@@ -26,7 +26,7 @@ namespace SYDEFinalProject
 
         private void btnView_Click(object sender, EventArgs e)
         {
-            frmPatientInfoScreen Info = new frmPatientInfoScreen();
+            frmPhysicianInfoScreen Info = new frmPhysicianInfoScreen();
             this.Hide();
             Info.ShowDialog();
         }

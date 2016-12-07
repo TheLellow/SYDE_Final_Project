@@ -33,12 +33,14 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.btnViewEmployeeInfo = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(16, 316);
+            this.btnRegister.Location = new System.Drawing.Point(16, 374);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(128, 23);
             this.btnRegister.TabIndex = 1;
@@ -48,7 +50,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(266, 316);
+            this.btnBack.Location = new System.Drawing.Point(266, 397);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 2;
@@ -76,7 +78,7 @@
             // 
             // btnViewEmployeeInfo
             // 
-            this.btnViewEmployeeInfo.Location = new System.Drawing.Point(16, 345);
+            this.btnViewEmployeeInfo.Location = new System.Drawing.Point(16, 403);
             this.btnViewEmployeeInfo.Name = "btnViewEmployeeInfo";
             this.btnViewEmployeeInfo.Size = new System.Drawing.Size(128, 23);
             this.btnViewEmployeeInfo.TabIndex = 49;
@@ -84,11 +86,29 @@
             this.btnViewEmployeeInfo.UseVisualStyleBackColor = true;
             this.btnViewEmployeeInfo.Click += new System.EventHandler(this.btnViewEmployeeInfo_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(217, 314);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 63;
+            this.button1.Text = "Search";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(48, 316);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(128, 20);
+            this.textBox1.TabIndex = 62;
+            // 
             // frmEmployeesScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 375);
+            this.ClientSize = new System.Drawing.Size(362, 432);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnViewEmployeeInfo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridView1);
@@ -109,5 +129,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnViewEmployeeInfo;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
